@@ -6,5 +6,7 @@
             <generator strategy="AUTO" />
         </id>
         <field name="nazwa" type="string" />
+
+        <one-to-one field="powiat" target-entity="Powiat" mapped-by="miasta" />
     </entity>
 </doctrine-mapping>

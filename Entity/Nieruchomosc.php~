@@ -273,4 +273,62 @@ class Nieruchomosc
     {
         return $this->numer;
     }
+    /**
+     * @var \Entity\Domy
+     */
+    private $domy;
+
+    /**
+     * @var \Entity\Grunty
+     */
+    private $grunty;
+
+
+    /**
+     * Set domy.
+     *
+     * @param \Entity\Domy|null $domy
+     *
+     * @return Nieruchomosc
+     */
+    public function setDomy(\Entity\Domy $domy = null)
+    {
+        $this->domy = $domy;
+
+        return $this;
+    }
+
+    /**
+     * Get domy.
+     *
+     * @return \Entity\Domy|null
+     */
+    public function getDomy()
+    {
+        return $this->domy;
+    }
+
+    /**
+     * Set grunty.
+     *
+     * @param \Entity\Grunty|null $grunty
+     *
+     * @return Nieruchomosc
+     */
+    public function setGrunty(\Entity\Grunty $grunty = null)
+    {
+        $this->grunty = $grunty;
+
+        return $this;
+    }
+
+    /**
+     * Get grunty.
+     *
+     * @return \Entity\Grunty|null
+     */
+    public function getGrunty()
+    {
+        return $this->grunty;
+    }
 }

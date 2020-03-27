@@ -331,4 +331,62 @@ class Nieruchomosc
     {
         return $this->grunty;
     }
+    /**
+     * @var \Entity\Materialy
+     */
+    private $materialy;
+
+    /**
+     * @var \Entity\Dodatkowe
+     */
+    private $dodatkowe;
+
+
+    /**
+     * Set materialy.
+     *
+     * @param \Entity\Materialy|null $materialy
+     *
+     * @return Nieruchomosc
+     */
+    public function setMaterialy(\Entity\Materialy $materialy = null)
+    {
+        $this->materialy = $materialy;
+
+        return $this;
+    }
+
+    /**
+     * Get materialy.
+     *
+     * @return \Entity\Materialy|null
+     */
+    public function getMaterialy()
+    {
+        return $this->materialy;
+    }
+
+    /**
+     * Set dodatkowe.
+     *
+     * @param \Entity\Dodatkowe|null $dodatkowe
+     *
+     * @return Nieruchomosc
+     */
+    public function setDodatkowe(\Entity\Dodatkowe $dodatkowe = null)
+    {
+        $this->dodatkowe = $dodatkowe;
+
+        return $this;
+    }
+
+    /**
+     * Get dodatkowe.
+     *
+     * @return \Entity\Dodatkowe|null
+     */
+    public function getDodatkowe()
+    {
+        return $this->dodatkowe;
+    }
 }

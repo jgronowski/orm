@@ -51,4 +51,33 @@ class Miasto
     {
         return $this->id;
     }
+    /**
+     * @var \Entity\Powiat
+     */
+    private $powiat;
+
+
+    /**
+     * Set powiat.
+     *
+     * @param \Entity\Powiat|null $powiat
+     *
+     * @return Miasto
+     */
+    public function setPowiat(\Entity\Powiat $powiat = null)
+    {
+        $this->powiat = $powiat;
+
+        return $this;
+    }
+
+    /**
+     * Get powiat.
+     *
+     * @return \Entity\Powiat|null
+     */
+    public function getPowiat()
+    {
+        return $this->powiat;
+    }
 }
